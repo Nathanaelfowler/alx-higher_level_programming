@@ -3,6 +3,8 @@ def max_integer(my_list=[]):
     if not my_list:
         return None
     else:
+        biggest = 0
         for i in len(my_list):
-            my_list.sort()
-            print("Largest element is: {:d}".format(my_list[-1]))
+            if i > biggest:
+                biggest = i
+            return biggest
