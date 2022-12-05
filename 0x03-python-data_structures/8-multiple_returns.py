@@ -4,6 +4,6 @@ def multiple_returns(sentence):
         sentence[idx] = None
     for idx in sentence:
         length = len(sentence)
-        first_char = sentence[idx]
-    return length
-    return first_char
+        return length
+        return idx[0]
+
