@@ -5,4 +5,4 @@ def max_integer(my_list=[]):
     else:
         for i in len(my_list):
             my_list.sort()
-            print("Largest element is:", my_list[-1])
+            print("Largest element is: {:d}".format(my_list[-1]))
