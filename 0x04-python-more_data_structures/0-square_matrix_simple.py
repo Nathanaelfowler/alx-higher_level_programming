@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
+    new_matrix = []
     new_matrix = [[1]] * len(matrix)#creating new matrix as the same size of matrix
     row_index = 0#indexing no. of row
     for row in matrix:
