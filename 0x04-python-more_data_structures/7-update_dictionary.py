@@ -4,4 +4,4 @@ def update_dictionary(a_dictionary, key, value):
         a_dictionary[key] = value
     else:
         print()
-    print("{}: {}".format(key, value))
+    return a_dictionary
