@@ -6,4 +6,5 @@ class Square:
     """using the '__init__'"""
 
 square = Square()
-print(square)
+print(type(square))
+print(square.dict_)
