@@ -2,7 +2,7 @@
 class Square:
     pass
     """creating an empty square"""
-    """def __init__(self):"""
-    """using the '__init__'"""
+    def __square__(self):
+        """using the '__init__'"""
 square = Square()
 print(square)
