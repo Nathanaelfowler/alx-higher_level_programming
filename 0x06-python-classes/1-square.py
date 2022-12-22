@@ -4,8 +4,6 @@
 
 class Square:
     """defining a square"""
-
-
     def __init__(self, size):
         """initializing a method
         Args:
