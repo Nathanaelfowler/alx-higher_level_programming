@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+"""compulsory line"""
+
+
 class Square:
-    pass
     """creating an empty square"""
+    pass
+
     def __square__(self):
         """using the '__init__'"""
-square = Square()
-print(square)
