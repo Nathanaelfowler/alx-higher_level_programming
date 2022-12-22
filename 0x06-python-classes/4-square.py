@@ -9,12 +9,12 @@ class Square:
         """using a method"""
         self.__size = size
 
-        #This is the getter
+        ##This is the getter
         @property
         def size(self):
             return self.__size
 
-        #This is the setter
+        ##This is the setter
         @size.setter
         def size(self, value):
             if type(value) != int:
