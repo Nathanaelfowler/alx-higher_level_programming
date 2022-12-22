@@ -8,10 +8,6 @@ class Square:
     def __init__(self, size=0):
         """using a method"""
         self.__size = size
-        if type(size) != int:
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise TypeError("size must be >= 0")
 
         #This is the getter
         @property
@@ -21,10 +17,12 @@ class Square:
         #This is the setter
         @size.setter
         def size(self, value):
-            if value.isdigit():
-                self.__size = value
+            if type(value) != int:
+                raise TypeError("size must be an integer")
+            elif value < 0:
+                raise TypeError("size must be >= 0")
             else:
-                print("Please only enter numbers for size")
+                self.__size = value
 
         def area(self):
             """a method for the area"""
