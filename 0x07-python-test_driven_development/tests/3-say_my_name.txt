@@ -1,0 +1,36 @@
+import doctest
+doctest.testfile("3-say_my_name.txt")
+<BLANKLINE>
+>>> say_my_name = __import__('3-say_my_name').say_my_name                                                                                              
+<BLANKLINE>
+>>> say_my_name("Nathanael", "Fowler")                                                                                                                 
+<BLANKLINE>
+My name is Nathanael Fowler                                                                                                                            
+<BLANKLINE>
+>>> say_my_name("Nathanael", 12)                                                                                                                       
+<BLANKLINE>
+Traceback (most recent call last):                                                                                                                     
+<BLANKLINE>
+  File "<stdin>", line 1, in <module>                                                                                                                  
+<BLANKLINE>
+  File "/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 11, in say_my_name                                   
+<BLANKLINE>
+    raise TypeError("first_name must be a string or last_name must be a string")                                                                       
+<BLANKLINE>
+TypeError: first_name must be a string or last_name must be a string                                                                                   
+<BLANKLINE>
+>>> say_my_name("Nathanael")                                                                                                                           
+<BLANKLINE>
+My name is Nathanael                                                                                                                                   
+<BLANKLINE>
+>>> say_my_name()                                                                                                                                      
+<BLANKLINE>
+Traceback (most recent call last):                                                                                                                     
+<BLANKLINE>
+  File "<stdin>", line 1, in <module>                                                                                                                  
+<BLANKLINE>
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'                                                                          
+<BLANKLINE>
+>>> say_my_name("John", "Fowler")                                                                                                                      
+<BLANKLINE>
+My name is John Fowler
