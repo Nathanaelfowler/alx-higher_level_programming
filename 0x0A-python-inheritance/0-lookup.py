@@ -8,4 +8,5 @@ def lookup(obj):
     def __init__(self, list):
         """using a constructor"""
         self.list = list
+        return (list)
 l = lookup(list)
